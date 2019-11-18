@@ -1,0 +1,40 @@
+# several reflective spheres
+
+fov 60
+eye  0 0 0
+uvw  1 0 0  0 1 0  0 0 1
+
+# blue background
+
+background 0.2 0.2 1
+
+# two light sources
+
+light 8 8 3  .7 .7 .7
+light -4 2 0  .3 .3 .3
+
+# this cone acts as a ground plane
+
+surface  .8 .8 .8  .2 .2 .2  0 0 0  1  0
+
+cone 0 -20 0  19.4 2
+
+# reflective spheres
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 0.8  0.8 0.2 -7
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 0.8  -0.8 0.2 -7
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 0.4  0 -0.2 -5.5
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 0.4  1 -0.2 -4
+
+surface  .6 .6 .6  .2 .2 .2  0.7 0.7 0.7  20  0.7
+sphere 0.4  -1 -0.2 -4
+
+write p09.png
+

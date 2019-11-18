@@ -1,0 +1,21 @@
+# three spheres, includes shadow
+
+background .4 .4 .9
+
+fov 30
+eye  0 0 5
+uvw  1 0 0  0 1 0  0 0 1
+
+light 5 5 5 1 1 1
+
+surface   0 0.5 0  0 0.2 0   0 0 0   1  0
+sphere 1  0 0 -5
+
+surface   0.5 0 0   0.2 0 0   0 0 0   1  0
+sphere .33  1 0.6 -4
+
+surface   0.5 0.5 0   0.2 0.2 0   0 0 0   1  0
+sphere .11  1.4 0.9 -3.3
+
+write p02.png
+

@@ -1,0 +1,24 @@
+# several cones
+
+background .4 .4 .9
+
+fov 60
+eye  -6 0 0
+uvw  0 0 1  0 1 0  -1 0 0
+
+light -6 3 3 1 1 1
+
+surface   0.9 0.9 0.9   0 0 0   0 0 0   1  0
+cone 0 -2 -1  1  0.5
+
+surface   0.9 0.2 0.2   0 0 0   0 0 0   1  0
+cone 0 0 1  2  0.2
+
+surface   0.2 0.9 0.2   0 0 0   0 0 0   1  0
+cone 0 0 -1  1  1
+
+surface   0.2 0.2 0.9   0 0 0   0 0 0   1  0
+cone 0 -2 1  0.7  1.5
+
+write p05.png
+
